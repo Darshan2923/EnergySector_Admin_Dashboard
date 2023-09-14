@@ -8,10 +8,7 @@ const App = () => {
     <div className='app'>
       <BrowserRouter>
         <Routes>
-          <Route element={<Layout />}>
-            <Route path='/' element={<Navigate to="/dashboard" replace />} />
-            <Route path='/dashboard' element={<DashBoard />} />
-          </Route>
+          <Route path='/' element={<DashBoard />} />
         </Routes>
       </BrowserRouter>
 
